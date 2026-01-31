@@ -1,0 +1,99 @@
+body {
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 30px;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#player-input {
+  margin-bottom: 15px;
+}
+
+#player-input input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+#player-input button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #00f2fe;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#player-input button:hover {
+  background-color: #4facfe;
+}
+
+#status {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #764ba2;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.3s, transform 0.1s;
+}
+
+td:hover {
+  background-color: #f3e8ff;
+  transform: scale(1.05);
+}
+
+#resetBtn {
+  margin-top: 10px;
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff758c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#resetBtn:hover {
+  background-color: #ff4d6d;
+}
+
+/* X and O colors */
+td:contains("X") {
+  color: #ff4d6d;
+}
+
+td:contains("O") {
+  color: #4facfe;
+}
